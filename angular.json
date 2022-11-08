@@ -7,6 +7,12 @@
   "newProjectRoot": "projects",
   "projects": {
     "wallpanel": {
+      "i18n": {
+        "sourceLocale": "en-US",
+        "locales": {
+          "it-IT": "src/locale/messages.it-IT.xlf"
+        }
+      },
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,6 +29,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "localize": [
+              "it-IT"
+            ],
             "outputPath": "dist/wallpanel",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -36,7 +45,10 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.js",
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+            ]
           },
           "configurations": {
             "production": {

@@ -1,0 +1,66 @@
+/* TOPBAR */
+.app-topbar {
+  background-color: var(--primary-alpha);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: auto;
+  width: 100%;
+  z-index: 10;
+  padding: 2px 0;
+}
+
+.app-topbar div {
+  display: inline-block;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.app-topbar .topbar-datetime {
+  width: 25%;
+  text-align: center;
+}
+
+.app-topbar .topbar-pagetitle {
+  width: 75%;
+  padding-left: 8%;
+}
+
+/* APP PAGES */
+.app-pages {
+  background-color: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: auto;
+  width: 100%;
+  z-index: 10;
+}
+
+.app-page {
+  background-color: var(--primary-alpha);
+  display: inline-block;
+  width: 25%;
+  color: var(--white);
+  height: 100%;
+  padding: 6px 0;
+}
+
+.app-page.selected {
+  background-color: var(--secondary-alpha);
+}
+
+.app-page i,
+.app-page span {
+  display: block;
+  text-align: center;
+}
+
+.app-page i {
+  font-size: 26px;
+}
+
+.app-page span {
+  font-size: 10px;
+}
