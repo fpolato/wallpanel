@@ -4,26 +4,26 @@
 </div>
 
 <div class="app-content">
-
+  <router-outlet></router-outlet>
 </div>
 <div class="app-pages">
 
-  <div class="app-page selected">
-    <i class="bi bi-house"></i>
+  <div class="app-page selected" routerLink="/rooms">
+    <i class="bi bi-house-fill"></i>
     <span i18n>Rooms</span>
   </div>
 
-  <div class="app-page">
-    <i class="bi bi-lightbulb"></i>
+  <div class="app-page" routerLink="/lights">
+    <i class="bi bi-lightbulb-fill"></i>
     <span i18n>Lights</span>
   </div>
 
-  <div class="app-page">
+  <div class="app-page" routerLink="/thermostats">
     <i class="bi bi-thermometer-half"></i>
     <span i18n>Thermostats</span>
   </div>
 
-  <div class="app-page">
+  <div class="app-page" routerLink="/devices">
     <i class="bi bi-robot"></i>
     <span i18n>Devices</span>
   </div>
