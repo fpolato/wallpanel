@@ -8,9 +8,12 @@
   "projects": {
     "wallpanel": {
       "i18n": {
-        "sourceLocale": "en-US",
+        "sourceLocale": "en",
         "locales": {
-          "it-IT": "src/locale/messages.it-IT.xlf"
+          "it": {
+            "translation": "src/locale/messages.it.xlf",
+            "baseHref": ""
+          }
         }
       },
       "projectType": "application",
@@ -30,7 +33,7 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "localize": [
-              "it-IT"
+              "it"
             ],
             "outputPath": "dist/wallpanel",
             "index": "src/index.html",
