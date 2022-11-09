@@ -11,6 +11,7 @@ import { ThermostatsComponent } from './components/thermostats/thermostats.compo
 import { DevicesComponent } from './components/devices/devices.component';
 import { PageComponent } from './components/page/page.component';
 import { ScreensaverComponent } from './components/screensaver/screensaver.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -25,10 +26,11 @@ import { ScreensaverComponent } from './components/screensaver/screensaver.compo
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     AppRoutingModule,
     NgbModule
   ],
-  providers: [],
+  providers: [ HttpClientModule ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
