@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'page',
@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PageComponent implements OnInit {
 
+  @Input() title: string = '';
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  public refreshPage(): void {
+    window.location.reload();
   }
 
 }

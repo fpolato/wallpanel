@@ -1,3 +1,23 @@
+/* SCREEN SAVER */
+.screensaver {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  z-index: 1055;
+  background-color: var(--primary);
+  opacity: 0;
+}
+
+.screensaver.visible {
+  display: block;
+}
+
+/* APP CONTENT */
 .app-content {
   position: absolute;
   top: 0;
@@ -8,35 +28,6 @@
   margin: 0;
   border: 0;
   background-image: url("../assets/images/background.jpg");
-}
-
-/* TOPBAR */
-.app-topbar {
-  background-color: var(--primary-alpha);
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 28px;
-  width: 100%;
-  z-index: 10;
-  padding: 2px 0;
-}
-
-.app-topbar div {
-  display: inline-block;
-  color: white;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.app-topbar .topbar-datetime {
-  width: 25%;
-  text-align: center;
-}
-
-.app-topbar .topbar-pagetitle {
-  width: 75%;
-  padding-left: 8%;
 }
 
 /* APP PAGES */

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-thermostats',
+  selector: 'thermostats',
   templateUrl: './thermostats.component.html',
   styleUrls: ['./thermostats.component.scss']
 })

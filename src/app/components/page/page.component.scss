@@ -1,5 +1,40 @@
-div {
-  margin: 28px 0 66px 0;
-  height: calc(100% - 28px - 66px);
+/* TOPBAR */
+.topbar {
+  background-color: var(--primary-alpha);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 28px;
+  width: 100%;
+  z-index: 10;
+  padding: 2px 0;
+}
+
+.topbar div {
+  display: inline-block;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.topbar .topbar-datetime {
+  width: 25%;
+  text-align: center;
+}
+
+.topbar .topbar-pagetitle {
+  width: calc(75% - 28px);
+  padding-left: 8%;
+}
+
+.topbar .topbar-refreshpage {
+  color: var(--white);
+  margin-right: 12px;
+}
+
+/* CONTENT */
+.content {
+  margin: 0 0 66px 0;
+  height: calc(100% - 66px);
   overflow: auto;
 }

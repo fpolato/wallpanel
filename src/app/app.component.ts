@@ -1,14 +1,52 @@
 import { Component } from '@angular/core';
+import { animate, state, style, transition, trigger, sequence } from '@angular/animations';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  animations: [
+    trigger('openClose', [
+      state('open', style ({
+        opacity: 1
+      })),
+      state('close', style ({
+        opacity: 0,
+        display: 'none'
+      })),
+      transition('open => close', [
+        animate('0.3s')
+      ]),
+      transition('close => open', [
+        sequence([
+          style({ display: 'block' }),
+          animate('1.5s')
+        ])
+      ])
+    ])
+  ]
 })
 export class AppComponent {
-  title = 'wallpanel';
+  
+  title: string = 'wallpanel';
+  screenSaverVisible: boolean = false;
+  timer: number;
+
+  private screenSaverTime: number = 3000;
 
   constructor () {
+    this.timer = window.setTimeout(() => { this.screenSaverVisible = true; }, this.screenSaverTime);
+  }
 
+  public hideScreenSaver(): void {
+    this.screenSaverVisible = false;
+    this.resetScreenSaverTimer();
+  }
+
+  public resetScreenSaverTimer(): void {
+    if(this.timer) {
+      window.clearTimeout(this.timer);
+    }
+    this.timer = window.setTimeout(() => { this.screenSaverVisible = true; }, this.screenSaverTime);
   }
 }

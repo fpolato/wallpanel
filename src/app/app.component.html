@@ -1,29 +1,38 @@
-<div class="app-topbar">
-  <div class="topbar-datetime">Twe 11-08-2022 16:59</div>
-  <div class="topbar-pagetitle">Rooms</div>
+<div class="screensaver"
+  [@openClose]="screenSaverVisible ? 'open' : 'close'"
+  (click)="hideScreenSaver()">
+    <screensaver></screensaver>
 </div>
 
-<div class="app-content">
+<div class="app-content" (click)="resetScreenSaverTimer()">
   <router-outlet></router-outlet>
 </div>
-<div class="app-pages">
+<div class="app-pages" (click)="resetScreenSaverTimer()">
 
-  <div class="app-page selected" routerLink="/rooms">
+  <div class="app-page" 
+    routerLink="/rooms" 
+    routerLinkActive="selected">
     <i class="bi bi-house-fill"></i>
     <span i18n>Rooms</span>
   </div>
 
-  <div class="app-page" routerLink="/lights">
+  <div class="app-page" 
+    routerLink="/lights" 
+    routerLinkActive="selected">
     <i class="bi bi-lightbulb-fill"></i>
     <span i18n>Lights</span>
   </div>
 
-  <div class="app-page" routerLink="/thermostats">
+  <div class="app-page" 
+    routerLink="/thermostats" 
+    routerLinkActive="selected">
     <i class="bi bi-thermometer-half"></i>
     <span i18n>Thermostats</span>
   </div>
 
-  <div class="app-page" routerLink="/devices">
+  <div class="app-page" 
+    routerLink="/devices" 
+    routerLinkActive="selected">
     <i class="bi bi-robot"></i>
     <span i18n>Devices</span>
   </div>
