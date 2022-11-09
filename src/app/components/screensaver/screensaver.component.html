@@ -1,3 +1,15 @@
-<div class="container">
-  
+<div class="container h-100">
+  <div class="row h-100">
+    <div class="col h-100">
+      <div class="screensaver-datetime">
+        <div class="screensaver-time">{{ today | date:'HH' }}<span [ngStyle]="{ visibility: (timeSeparatorVisible ? 'visible' : 'hidden') }">:</span>{{ today | date:'mm' }}</div>
+        <div class="screensaver-date">{{ today | date:'dd/MM/yyyy'}}</div>
+      </div>
+    </div>
+    <div class="col-7 h-100">
+      <div class="screensaver-weather">
+        
+      </div>
+    </div>
+  </div>
 </div>

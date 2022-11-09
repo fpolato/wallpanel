@@ -1,3 +1,16 @@
-.container {
-  
+.screensaver-datetime {
+  margin-top: 50%;
+  color: var(--white);
+  text-align: center;
+  height: 160px;
+}
+
+.screensaver-time {
+  font-size: 92px;
+  line-height: 103px;
+}
+
+.screensaver-date {
+  font-size: 38px;
+  font-weight: 300;
 }
