@@ -9,7 +9,8 @@ const routes: Routes = [
   { path: 'rooms', component: RoomsComponent },
   { path: 'lights', component: LightsComponent },
   { path: 'thermostats', component: ThermostatsComponent },
-  { path: 'devices', component: DevicesComponent }
+  { path: 'devices', component: DevicesComponent },
+  { path: '',   redirectTo: '/rooms', pathMatch: 'full' }
 ];
 
 @NgModule({

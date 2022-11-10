@@ -39,6 +39,10 @@ export class AppComponent {
     this.timer = window.setTimeout(() => { this.screenSaverVisible = true; }, this.screenSaverTime);
   }
 
+  ngOnDestroy(): void {
+    window.clearTimeout(this.timer);
+  }
+
   public hideScreenSaver(): void {
     this.screenSaverVisible = false;
     this.resetScreenSaverTimer();

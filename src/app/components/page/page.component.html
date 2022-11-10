@@ -1,7 +1,7 @@
 <div class="topbar">
-  <div class="topbar-datetime">Twe 11-08-2022 16:59</div>
-  <div class="topbar-pagetitle">{{ title }}</div>
-  <i class="bi bi-arrow-clockwise topbar-refreshpage" 
+  <div class="topbar-datetime">{{ today | date:'ccc dd LLL yyyy - hh:mm' | titlecase }}</div>
+  <div class="topbar-pagetitle">{{ title | uppercase }}</div>
+  <i class="bi bi-arrow-clockwise topbar-refreshpage"
     title="Refresh Page"
     (click)="refreshPage()"></i>
 </div>
