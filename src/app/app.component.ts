@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { animate, state, style, transition, trigger, sequence } from '@angular/animations';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -27,12 +28,12 @@ import { animate, state, style, transition, trigger, sequence } from '@angular/a
   ]
 })
 export class AppComponent {
-  
+
   title: string = 'wallpanel';
   screenSaverVisible: boolean = false;
   timer: number;
 
-  private screenSaverTime: number = 3000;
+  private screenSaverTime: number = environment.screenSaverTimeSec * 1000;
 
   constructor () {
     this.timer = window.setTimeout(() => { this.screenSaverVisible = true; }, this.screenSaverTime);

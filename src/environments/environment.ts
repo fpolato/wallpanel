@@ -3,7 +3,15 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  screenSaverTimeSec: 60,
+  meteo: {
+    locationDescription: 'Monselice',
+    latitude: 45.25,
+    longitude: 11.74,
+    timezone: 'Europe/Berlin',
+    refreshRateMin: 60
+  }
 };
 
 /*

@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { MeteoForecast } from '../interfaces/meteo-forecast';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
@@ -25,14 +26,14 @@ export class MeteoService {
   public getForecast(): Observable<MeteoForecast> {
 
     const startDate: Date = new Date();
-    const endDate: Date = new Date(startDate.getTime() + (1000 * 60 * 60 * 24 * 3))
+    const endDate: Date = new Date(startDate.getTime() + (1000 * 60 * 60 * 24 * 3));
 
     const headers = {
       params: new HttpParams()
-        .set('latitude', 45.23)
-        .set('longitude', 11.68)
+        .set('latitude', environment.meteo.latitude)
+        .set('longitude', environment.meteo.longitude)
         .set('daily', 'weathercode,temperature_2m_max,temperature_2m_min')
-        .set('timezone', 'Europe/Berlin')
+        .set('timezone', environment.meteo.timezone)
         .set('start_date', this.buildDateString(startDate))
         .set('end_date', this.buildDateString(endDate))
     };

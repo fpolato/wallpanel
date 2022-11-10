@@ -7,8 +7,69 @@
       </div>
     </div>
     <div class="col-7 h-100">
-      <div class="screensaver-weather">
-        
+      <div class="screensaver-weather w-100 h-100">
+        <div class="row h-50">
+          <div class="col today-weather">
+            <div class="fc-icon">
+              <img [src]="getDailyWeatherIcon(0)" width="128" height="128" />
+            </div>
+            <div class="fc-properties">
+              <div class="text-left">
+                <span class="fc-date">{{ getForecastDate(0) | date }}</span>
+              </div>
+              <div class="text-left">
+                <span class="fc-temperature">{{ getDailyTemperature(0) }}</span>
+              </div>
+              <div class="text-left">
+                <span class="fc-weather">{{ getDailyWeather(0) }}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row h-50">
+          <div class="col tomorrow-weather">
+            <div class="w-100 text-center">
+              <span class="fc-date">{{ getForecastDate(1) | date }}</span>
+            </div>
+            <div class="w-100 text-center">
+              <img [src]="getDailyWeatherIcon(1)" width="64" height="64" />
+            </div>
+            <div class="w-100 text-center">
+              <span class="fc-temperature">{{ getDailyTemperature(1) }}</span>
+            </div>
+            <div class="w-100 text-center">
+              <span class="fc-weather">{{ getDailyWeather(1) }}</span>
+            </div>
+          </div>
+          <div class="col tomorrow-weather">
+            <div class="w-100 text-center">
+              <span class="fc-date">{{ getForecastDate(2) | date }}</span>
+            </div>
+            <div class="w-100 text-center">
+              <img [src]="getDailyWeatherIcon(2)" width="64" height="64" />
+            </div>
+            <div class="w-100 text-center">
+              <span class="fc-temperature">{{ getDailyTemperature(2) }}</span>
+            </div>
+            <div class="w-100 text-center">
+              <span class="fc-weather">{{ getDailyWeather(2) }}</span>
+            </div>
+          </div>
+          <div class="col tomorrow-weather">
+            <div class="w-100 text-center">
+              <span class="fc-date">{{ getForecastDate(3) | date }}</span>
+            </div>
+            <div class="w-100 text-center">
+              <img [src]="getDailyWeatherIcon(3)" width="64" height="64" />
+            </div>
+            <div class="w-100 text-center">
+              <span class="fc-temperature">{{ getDailyTemperature(3) }}</span>
+            </div>
+            <div class="w-100 text-center">
+              <span class="fc-weather">{{ getDailyWeather(3) }}</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
