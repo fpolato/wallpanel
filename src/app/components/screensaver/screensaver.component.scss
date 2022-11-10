@@ -1,0 +1,79 @@
+/* DATETIME */
+.screensaver-datetime {
+  margin-top: 50%;
+  color: var(--white);
+  text-align: center;
+  height: 160px;
+}
+
+.screensaver-time {
+  font-size: 92px;
+  line-height: 103px;
+}
+
+.screensaver-date {
+  font-size: 38px;
+  font-weight: 300;
+}
+
+/* WEATHER */
+.today-weather {
+  padding-top: calc(50% - 128px);
+}
+
+/* TODAY */
+.today-weather .fc-icon {
+  display: inline-block;
+  width: 128px;
+  height: 128px;
+  vertical-align: bottom;
+}
+
+.today-weather .fc-properties {
+  display: inline-block;
+  width: calc(100% - 128px);
+  height: 128px;
+  vertical-align: bottom;
+  padding: 16px 0;
+}
+
+.today-weather .fc-properties div {
+  display: block;
+  color: var(--white);
+  padding-left: 12px;
+}
+
+.today-weather .fc-properties .fc-date {
+  font-size: 20px;
+  font-weight: bold;
+  vertical-align: bottom;
+}
+
+.today-weather .fc-properties .fc-temperature {
+  font-size: 26px;
+}
+
+.today-weather .fc-properties .fc-weather {
+  font-size: 18px;
+}
+
+/* TOMORROW */
+.tomorrow-weather {
+  color: var(--white);
+}
+
+.tomorrow-weather span {
+  text-align: center;
+}
+
+.tomorrow-weather .fc-date {
+  font-weight: bold;
+}
+
+.tomorrow-weather .fc-temperature {
+  font-size: 12px;
+}
+
+.tomorrow-weather .fc-weather {
+  font-size: 12px;
+}

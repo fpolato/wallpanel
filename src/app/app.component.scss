@@ -1,0 +1,69 @@
+/* SCREEN SAVER */
+.screensaver {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  z-index: 1055;
+  background-color: var(--primary);
+  opacity: 0;
+}
+
+.screensaver.visible {
+  display: block;
+}
+
+/* APP CONTENT */
+.app-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-image: url("../assets/images/background.jpg");
+}
+
+/* APP PAGES */
+.app-pages {
+  background-color: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 66px;
+  width: 100%;
+  z-index: 10;
+}
+
+.app-page {
+  background-color: var(--primary-alpha);
+  display: inline-block;
+  width: 25%;
+  color: var(--white);
+  height: 100%;
+  padding: 6px 0;
+}
+
+.app-page.selected {
+  background-color: var(--secondary-alpha);
+}
+
+.app-page i,
+.app-page span {
+  display: block;
+  text-align: center;
+}
+
+.app-page i {
+  font-size: 26px;
+}
+
+.app-page span {
+  font-size: 10px;
+}
