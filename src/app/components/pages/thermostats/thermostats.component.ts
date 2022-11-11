@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'thermostats',
+  selector: 'wp-thermostats',
   templateUrl: './thermostats.component.html',
   styleUrls: ['./thermostats.component.scss']
 })

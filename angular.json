@@ -27,7 +27,7 @@
       },
       "root": "",
       "sourceRoot": "src",
-      "prefix": "app",
+      "prefix": "wp",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",

@@ -4,7 +4,7 @@ import { MeteoService } from 'src/app/services/meteo.service';
 import { environment } from 'src/environments/environment';
 
 @Component({
-  selector: 'screensaver',
+  selector: 'wp-screensaver',
   templateUrl: './screensaver.component.html',
   styleUrls: ['./screensaver.component.scss']
 })

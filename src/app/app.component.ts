@@ -3,7 +3,7 @@ import { animate, state, style, transition, trigger, sequence } from '@angular/a
 import { environment } from 'src/environments/environment';
 
 @Component({
-  selector: 'app-root',
+  selector: 'wp-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
   animations: [

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'devices',
+  selector: 'wp-devices',
   templateUrl: './devices.component.html',
   styleUrls: ['./devices.component.scss']
 })
