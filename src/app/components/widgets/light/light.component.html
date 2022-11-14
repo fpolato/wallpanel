@@ -1,3 +1,5 @@
-<div class="light">
-  aaa
+<div 
+  [class]="'light ' + (lightOn ? 'light-on' : 'light-off')"
+  (click)="lightOn = !lightOn;">
+  <div class="light-name">{{ lightName }}</div>
 </div>

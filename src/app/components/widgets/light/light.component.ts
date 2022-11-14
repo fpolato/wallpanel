@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'wp-light',
@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./light.component.scss']
 })
 export class LightComponent implements OnInit {
+
+  @Input() lightName: string = '';
+  @Input() lightOn: boolean = false;
 
   constructor() { }
 
